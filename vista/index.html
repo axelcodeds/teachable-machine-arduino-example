@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reconocimiento de Objetos con Teachable Machine</title>
+    </head>
+    <body>
+        <h1>Reconocimiento de Objetos</h1>
+        <video
+            id="webcam"
+            autoplay
+            playsinline
+            width="640"
+            height="480"
+        ></video>
+        <p id="status">Estado: Esperando...</p>
+        <p id="result">Resultado: No detectado</p>
+
+        <!-- Librerías de TensorFlow y Teachable Machine -->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+        <!-- Archivo JavaScript -->
+        <script src="main.js"></script>
+    </body>
+</html>
